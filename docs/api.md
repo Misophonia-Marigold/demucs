@@ -41,7 +41,7 @@ separator.update_parameter(segment=smaller_segment)
 # Remember to create the destination folder before calling `save_audio`
 # Or you are likely to receive `FileNotFoundError`
 for stem, source in separated.items():
-    demucs.api.save_audio(source, f"{stem}_file.mp3", samplerate=separator.samplerate)
+    demucs.api.save_audio(source, f"{stem}_file.mp3", separator.samplerate)
 ```
 
 ## API References
