@@ -305,7 +305,7 @@ class Separator:
         are the name of stems and values are separated waves. The original wave will have already
         been resampled.
         """
-        return self.separate_tensor(self._load_audio(file), self.samplerate)
+        return self.separate_tensor(self._load_audio(file).to(self._device), self.samplerate)
 
     @property
     def samplerate(self):
