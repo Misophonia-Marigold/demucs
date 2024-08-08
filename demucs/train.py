@@ -78,7 +78,7 @@ def get_optimizer(model, args):
     other_params = []
     groups = []
     for n, module in model.named_modules():
-        if hasattr(module, "make_optim_group"):
+     #   if hasattr(module, "make_optim_group"):
             group = module.make_optim_group()
             params = set(group["params"])
             assert params.isdisjoint(seen_params)
