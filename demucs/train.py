@@ -77,13 +77,13 @@ def get_optimizer(model, args):
     seen_params = set()
     other_params = []
     groups = []
-    for n, module in model.named_modules():
-     #   if hasattr(module, "make_optim_group"):
-            group = module.make_optim_group()
-            params = set(group["params"])
-            assert params.isdisjoint(seen_params)
-            seen_params |= set(params)
-            groups.append(group)
+    # for n, module in model.named_modules():
+    #     if hasattr(module, "make_optim_group"):
+    #         group = module.make_optim_group()
+    #         params = set(group["params"])
+    #         assert params.isdisjoint(seen_params)
+    #         seen_params |= set(params)
+    #         groups.append(group)
     for param in model.parameters():
         if param not in seen_params:
             other_params.append(param)
