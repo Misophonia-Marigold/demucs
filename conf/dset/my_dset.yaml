@@ -1,0 +1,9 @@
+# @package _global_
+
+# our custom dataset
+dset:
+  wav: /content/drive/My Drive/Demucs_Directory
+  samplerate: 44100
+  channels: 2
+  sources: ['coughing', 'non_coughing']
+epochs: 3
