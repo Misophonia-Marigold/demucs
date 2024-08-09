@@ -264,7 +264,7 @@ class Solver(object):
             # if div:
             #     logger.warning("Finishing training early because valid loss is too high.")
             #     is_last = True
-           if should_eval or is_last:
+            if should_eval or is_last:
                 # Evaluate on the testset
                 logger.info('-' * 70)
                 logger.info('Evaluating on the test set...')
