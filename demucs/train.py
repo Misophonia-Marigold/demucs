@@ -111,7 +111,7 @@ def get_datasets(args):
     if args.dset.backend:
         torchaudio.set_audio_backend(args.dset.backend)
     if args.dset.use_musdb:
-        train_set, valid_set = get_musdb_wav_datasets(args.dset)
+        train_set, valid_set = get_wav_datasets(args.dset)
     else:
         train_set, valid_set = [], []
     if args.dset.wav:
