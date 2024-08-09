@@ -1,6 +1,6 @@
 defaults:
   - _self_
-  - dset: wav
+  - dset: my_dset
   - svd: default
   - variant: default
   - override hydra/hydra_logging: colorlog
