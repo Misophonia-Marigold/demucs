@@ -5,5 +5,5 @@ dset:
   wav: /content/drive/My Drive/Demucs_Directory
   samplerate: 44100
   channels: 2
-  sources: ['coughing', 'non_coughing']
+  sources: ['vocals', 'non_vocals']
 epochs: 3
