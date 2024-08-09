@@ -21,7 +21,7 @@ dset:
   channels: 2
   normalize: true
   metadata: ./metadata
-  sources: ['coughing', 'non_coughing']
+  sources: ['vocals', 'non_vocals']
   valid_samples: # valid dataset size
   backend: null   # if provided select torchaudio backend.
 
